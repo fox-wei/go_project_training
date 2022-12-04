@@ -6,11 +6,11 @@ type TeamRepo struct {
 	DB model.DataBase
 }
 
-func (t *TeamRepo) GetTeamListByIds(hotelId string) []model.Team {
-	var teams []model.Team
+func (t *TeamRepo) GetTeamListById(hotelId string) []model.Team {
+	var team []model.Team
 
-	t.DB.MyDB.Where("hotel_id=?", hotelId).Find(&teams)
-	return teams
+	t.DB.MyDB.Where("hotel_id=?", hotelId).Find(&team)
+	return team
 }
 
 func (t *TeamRepo) GetTeamDetail(teamDetailId string) []model.TeamAggregation {
