@@ -4,11 +4,11 @@ import (
 	"github.com/fox-wei/go_project_training/life_revive/model"
 )
 
-type RestauranNavtRepo struct {
+type RestauranNavRepo struct {
 	DB model.DataBase
 }
 
-func (r *RestauranNavtRepo) ListRestaurantNav(level int) []model.RestaurantNav {
+func (r *RestauranNavRepo) ListRestaurantNav(level int) []model.RestaurantNav {
 	var items []model.RestaurantNav
 
 	r.DB.MyDB.Where("level=?", level).Find(&items)
@@ -19,7 +19,7 @@ type RestaurantTableRepo struct {
 	DB model.DataBase
 }
 
-func (r *RestaurantTableRepo) ListGoodRestaurantTable(level int) []model.RestaurantTabItem {
+func (r *RestaurantTableRepo) ListGoodRestaurantTableItem() []model.RestaurantTabItem {
 	var items []model.RestaurantTabItem
 
 	r.DB.MyDB.Find(&items)
