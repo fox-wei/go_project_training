@@ -6,8 +6,8 @@ type TakeOutItemRepo struct {
 	DB model.DataBase
 }
 
-func (t *TakeOutItemRepo) GetTakeOutById(hotelId string) []model.TakeOut {
-	var itemlists []model.TakeOut
+func (t *TakeOutItemRepo) GetTakeOutListById(hotelId string) []model.TakeOutItem {
+	var itemlists []model.TakeOutItem
 
 	t.DB.MyDB.Table("hotel").Joins("JOIN hotel_food_category on hotel.hotel_id=hotel_food_category.hotel_id").
 		Joins("JOIN take_out on hotel_food_category.hotel_food_category_id=take_out.hotel_food_category_id").Where("hotel.hotel_id=?", hotelId).
