@@ -183,6 +183,13 @@ func (h *NavHandler) NavHandler(ctx *gin.Context) {
 	})
 }
 
+func (h *NavHandler) SubNavHandler(ctx *gin.Context) {
+	items := h.Srv.ListNavItems(2)
+	ctx.JSON(http.StatusOK, gin.H{
+		"items": items,
+	})
+}
+
 func (h *SuggestFoodHandler) TeamHandler(ctx *gin.Context) {
 	items := h.Srv.ListSuggests(1)
 	ctx.JSON(http.StatusOK, gin.H{
