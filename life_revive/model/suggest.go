@@ -15,10 +15,10 @@ type Suggest struct {
 	FoodName string `json:"foodName"`
 	Icon     string `json:"icon"` //?icon图标
 
-	HotelName    string `json:"hotelName"`
-	JoinPersions string `json:"joinPersons"` //?参加人数
-	Price        string `json:"price"`
-	GoodPrice    string `json:"goodPrice"`
-	Distance     string `json:"distance"` //?距离
-	Level        string `json:"level"`    //?等级分类
+	HotelName   string `json:"hotelName"`
+	JoinPersons string `json:"joinPersons"` //?参加人数
+	Price       string `json:"price"`
+	GoodPrice   string `json:"goodPrice"`
+	Distance    string `json:"distance"` //?距离
+	Level       string `json:"level"`    //?等级分类
 }
