@@ -6,7 +6,7 @@ type Guess struct {
 	Src       string `json:"src"` //*picture of address
 	Title     string `json:"title"`
 	Desc      string `json:"desc"`      //*内容
-	GoodPrice string `json:"goodPrice"` //&优惠价格
 	Price     string `json:"price"`     //&原价
-	SoldNum   int32  `json:"soldNum"`   //*售出分数
+	GoodPrice string `json:"goodPrice"` //&优惠价格
+	SoldNum   int32  `json:"soldNum"`   //*销量
 }
