@@ -11,7 +11,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-const domain = "http://localhost:8080"
+// const domain = "http://localhost:8080"
 
 type DiscountHandler struct {
 	Srv *dbservice.DiscountService
