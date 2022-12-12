@@ -18,7 +18,7 @@ type Suggest struct {
 	HotelName   string `json:"hotelName"`
 	JoinPersons string `json:"joinPersons"` //?参加人数
 	Price       string `json:"price"`
-	GoodPrice   string `json:"goodPrice"`
-	Distance    string `json:"distance"` //?距离
-	Level       string `json:"level"`    //?等级分类
+	GoodPrice   string `json:"goodPrice"` //?优惠价格
+	Distance    string `json:"distance"`  //?距离
+	Level       int    `json:"level"`     //?等级分类
 }
