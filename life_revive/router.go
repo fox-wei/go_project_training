@@ -27,8 +27,15 @@ func Load(engine *gin.Engine, middlewares ...gin.HandlerFunc) *gin.Engine {
 		db.GET("/nav", NavHandler.NavHandler)
 		db.GET("/subnav", NavHandler.SubNavHandler)
 
-		//?获取团购信息
-		db.GET("/team/detail/:id", TeamDetailHandler.TeamDetailHandler)
+		//?首页拼团
+		db.GET("/team", SuggestFoodHandler.TeamHandler)
+		db.GET("/rush", SuggestFoodHandler.RushHandler)
+
+		//?首页猜你喜欢
+		db.GET("/guess", GuessHandler.Guess)
+
+		//*查找优惠信息
+		db.GET("/discount", DiscountHandler.DiscountList)
 
 		//?我的页面配置
 		db.GET("/me", MeHandler.MeHandler)
