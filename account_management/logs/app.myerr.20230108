@@ -1,0 +1,21 @@
+2023-01-08 00:00:24	error	middleware/logging.go:55	invalid character '{' after top-level value
+github.com/fox-wei/go_project_training/account_management/middleware.Logging.func1
+	D:/compterstudy/programing_language/go_language/fomalgo/go_project_training/account_management/middleware/logging.go:55
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/fox-wei/go_project_training/account_management/middleware.ProcessTraceID.func1
+	D:/compterstudy/programing_language/go_language/fomalgo/go_project_training/account_management/middleware/traceid.go:20
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/recovery.go:101
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:616
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:572
+net/http.serverHandler.ServeHTTP
+	C:/Program Files (x86)/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files (x86)/Go/src/net/http/server.go:1966

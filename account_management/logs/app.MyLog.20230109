@@ -1,0 +1,40 @@
+2023-01-09 13:10:32	info	model/mysql.go:51	连接数据成功
+2023-01-09 19:06:58	info	handler/account.go:43	用户名: Kors
+2023-01-09 19:06:58	info	handler/account.go:46	desc:
+2023-01-09 19:06:58	info	handler/account.go:49	Header Content-Type:application/json
+2023-01-09 19:06:58	info	middleware/logging.go:61	163.6838ms    | ::1          | POST /account/7370 {code: 0, message: OK}
+2023-01-09 19:07:17	info	middleware/logging.go:61	6.1269ms      | ::1          | POST /account/login {code: 30001, message: record not found}
+2023-01-09 19:07:57	info	token/token.go:32	secret:golang
+2023-01-09 19:07:57	info	middleware/logging.go:61	90.7989ms     | ::1          | POST /account/login {code: 0, message: OK}
+2023-01-09 19:08:30	info	middleware/auth.go:18	Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzMyNjI0NzcsImlkIjoiNzM3MCIsIm5iZiI6MTY3MzI2MjQ3NywidXNlcm5hbWUiOiJLb3JzIn0.AzMqscT5K9bGTdXEw6jveb720LyL419gLv9AtBEqYVA
+2023-01-09 19:08:30	info	handler/account.go:157	offset:0 limt:0
+2023-01-09 19:08:30	info	middleware/logging.go:61	7.2742ms      | ::1          | GET /account/list {code: 0, message: }
+2023-01-09 19:09:17	info	middleware/logging.go:61	3.1066ms      | ::1          | GET /account/Kors {code: 0, message: OK}
+2023-01-09 19:12:28	info	middleware/auth.go:18	Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzMyNjI0NzcsImlkIjoiNzM3MCIsIm5iZiI6MTY3MzI2MjQ3NywidXNlcm5hbWUiOiJLb3JzIn0.AzMqscT5K9bGTdXEw6jveb720LyL419gLv9AtBEqYVA
+2023-01-09 19:12:28	info	handler/account.go:157	offset:0 limt:0
+2023-01-09 19:12:28	info	middleware/logging.go:61	6.2769ms      | ::1          | GET /account/list {code: 0, message: }
+2023-01-09 19:15:43	info	middleware/logging.go:61	110.0546ms    | ::1          | PUT /account/ {code: 0, message: OK}
+2023-01-09 19:16:19	info	handler/account.go:43	用户名: Kors1
+2023-01-09 19:16:19	info	handler/account.go:46	desc:
+2023-01-09 19:16:19	info	handler/account.go:49	Header Content-Type:application/json
+2023-01-09 19:16:20	info	middleware/logging.go:61	125.7971ms    | ::1          | POST /account/7370 {code: 0, message: OK}
+2023-01-09 19:16:40	info	token/token.go:32	secret:golang
+2023-01-09 19:16:40	info	middleware/logging.go:61	90.0084ms     | ::1          | POST /account/login {code: 0, message: OK}
+2023-01-09 19:16:59	info	middleware/auth.go:18	Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzMyNjMwMDAsImlkIjoiNzM3MCIsIm5iZiI6MTY3MzI2MzAwMCwidXNlcm5hbWUiOiJLb3JzMSJ9.TJdRFWDPFJByCNwdj-6cILlhCHDQDUUTQvEKkigexjk
+2023-01-09 19:16:59	info	handler/account.go:157	offset:0 limt:0
+2023-01-09 19:16:59	info	middleware/logging.go:61	3.7022ms      | ::1          | GET /account/list {code: 0, message: }
+2023-01-09 22:51:10	info	model/mysql.go:51	连接数据成功
+2023-01-09 22:52:08	info	token/token.go:32	secret:golang
+2023-01-09 22:52:36	info	token/token.go:32	secret:golang
+2023-01-09 22:53:18	info	middleware/logging.go:61	14.7027ms     | ::1          | GET /account/Kors {code: 30001, message: User not found}
+2023-01-09 22:53:31	info	middleware/logging.go:61	1m22.209105s  | ::1          | POST /account/login {code: 0, message: OK}
+2023-01-09 22:53:31	info	middleware/logging.go:61	54.8307007s   | ::1          | POST /account/login {code: 0, message: OK}
+2023-01-09 22:53:55	info	middleware/logging.go:61	1.9015ms      | ::1          | GET /account/Kors1 {code: 0, message: OK}
+2023-01-09 22:54:06	info	middleware/logging.go:61	941.9µs       | ::1          | GET /account/Kors {code: 30001, message: User not found}
+2023-01-09 22:54:20	info	token/token.go:32	secret:golang
+2023-01-09 22:54:20	info	middleware/logging.go:61	113.0975ms    | ::1          | POST /account/login {code: 0, message: OK}
+2023-01-09 22:54:37	info	middleware/logging.go:61	1.5911ms      | ::1          | POST /account/login {code: 30001, message: record not found}
+2023-01-09 22:54:59	info	middleware/logging.go:61	1.9171ms      | ::1          | POST /account/login {code: 30001, message: record not found}
+2023-01-09 22:56:30	info	middleware/logging.go:61	1.1685ms      | ::1          | GET /account/Kors1 {code: 0, message: OK}
+2023-01-09 22:56:38	info	middleware/logging.go:61	21.9585437s   | ::1          | POST /account/login {code: 30001, message: Can't convert to the struct}
+2023-01-09 22:56:38	info	middleware/logging.go:61	1m0.5841596s  | ::1          | POST /account/login {code: 30001, message: Can't convert to the struct}

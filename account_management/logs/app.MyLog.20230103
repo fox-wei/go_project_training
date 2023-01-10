@@ -1,0 +1,14 @@
+2023-01-03 17:06:05	info	model/mysql.go:51	连接数据成功
+2023-01-03 17:06:17	info	token/token.go:32	secret:golang
+2023-01-03 17:06:17	info	middleware/logging.go:61	90.607ms      | ::1          | POST /account/login {code: 30001, message: Token error}
+2023-01-03 17:07:28	info	token/token.go:32	secret:golang
+2023-01-03 17:07:28	info	middleware/logging.go:61	85.734ms      | ::1          | POST /account/login {code: 30001, message: Token error}
+2023-01-03 17:07:46	info	token/token.go:32	secret:golang1
+2023-01-03 17:07:46	info	middleware/logging.go:61	98.9561ms     | ::1          | POST /account/login {code: 30001, message: Token error}
+2023-01-03 17:15:46	info	model/mysql.go:51	连接数据成功
+2023-01-03 17:15:52	info	token/token.go:32	secret:golang
+2023-01-03 17:15:52	info	middleware/logging.go:61	99.3394ms     | ::1          | POST /account/login {code: 0, message: OK}
+2023-01-03 17:51:59	info	middleware/logging.go:61	97.4659ms     | ::1          | POST /account/login {code: 30001, message: Password error}
+2023-01-03 17:52:06	info	middleware/logging.go:61	971µs         | ::1          | POST /account/login {code: 30001, message: record not found}
+2023-01-03 18:11:56	info	token/token.go:32	secret:golang
+2023-01-03 18:11:56	info	middleware/logging.go:61	94.1537ms     | ::1          | POST /account/login {code: 0, message: OK}

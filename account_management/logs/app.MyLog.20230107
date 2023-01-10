@@ -1,0 +1,112 @@
+2023-01-07 22:08:16	info	model/mysql.go:51	连接数据成功
+2023-01-07 22:08:23	info	handler/account.go:156	offset:0 limt:0
+2023-01-07 22:08:23	info	middleware/logging.go:61	8.172ms       | ::1          | GET /account/list {code: 0, message: }
+2023-01-07 22:08:45	info	handler/account.go:156	offset:0 limt:0
+2023-01-07 22:08:45	info	middleware/logging.go:61	5.4958ms      | ::1          | GET /account/list {code: 0, message: }
+2023-01-07 22:09:08	info	model/mysql.go:51	连接数据成功
+2023-01-07 22:09:13	info	middleware/auth.go:16	Authorization:
+2023-01-07 22:09:13	error	middleware/logging.go:55	invalid character '{' after top-level value
+github.com/fox-wei/go_project_training/account_management/middleware.Logging.func1
+	D:/compterstudy/programing_language/go_language/fomalgo/go_project_training/account_management/middleware/logging.go:55
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/fox-wei/go_project_training/account_management/middleware.ProcessTraceID.func1
+	D:/compterstudy/programing_language/go_language/fomalgo/go_project_training/account_management/middleware/traceid.go:20
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/recovery.go:101
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:616
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:572
+net/http.serverHandler.ServeHTTP
+	C:/Program Files (x86)/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files (x86)/Go/src/net/http/server.go:1966
+2023-01-07 22:09:13	info	middleware/logging.go:61	6.4096ms      | ::1          | GET /account/list {code: 30001, message: invalid character '{' after top-level value}
+2023-01-07 22:09:47	info	token/token.go:32	secret:golang
+2023-01-07 22:09:47	info	middleware/logging.go:61	110.1389ms    | ::1          | POST /account/login {code: 0, message: OK}
+2023-01-07 22:10:23	info	middleware/auth.go:16	Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzMxMDA1ODcsImlkIjoiMyIsIm5iZiI6MTY3MzEwMDU4NywidXNlcm5hbWUiOiJ2YW4td2VpIn0.EJo4kJ6trnYtHUXP42Z8uPuGUdAYfhferfNvwbX3Cpk
+2023-01-07 22:10:23	info	handler/account.go:156	offset:0 limt:0
+2023-01-07 22:10:23	info	middleware/logging.go:61	5.1951ms      | ::1          | GET /account/list {code: 0, message: }
+2023-01-07 23:55:35	info	model/mysql.go:51	连接数据成功
+2023-01-07 23:55:57	info	model/mysql.go:51	连接数据成功
+2023-01-07 23:56:06	info	middleware/auth.go:18	Authorization:
+2023-01-07 23:56:06	error	middleware/logging.go:55	invalid character '{' after top-level value
+github.com/fox-wei/go_project_training/account_management/middleware.Logging.func1
+	D:/compterstudy/programing_language/go_language/fomalgo/go_project_training/account_management/middleware/logging.go:55
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/fox-wei/go_project_training/account_management/middleware.ProcessTraceID.func1
+	D:/compterstudy/programing_language/go_language/fomalgo/go_project_training/account_management/middleware/traceid.go:20
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/recovery.go:101
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:616
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:572
+net/http.serverHandler.ServeHTTP
+	C:/Program Files (x86)/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files (x86)/Go/src/net/http/server.go:1966
+2023-01-07 23:56:06	info	middleware/logging.go:61	7.1878ms      | ::1          | GET /account/list {code: 30001, message: invalid character '{' after top-level value}
+2023-01-07 23:56:33	info	middleware/logging.go:61	48.6412ms     | ::1          | GET /account/3 {code: 30001, message: User not found}
+2023-01-07 23:56:46	info	middleware/logging.go:61	8.6224ms      | ::1          | GET /account/van-wei {code: 0, message: OK}
+2023-01-07 23:56:53	info	middleware/auth.go:18	Authorization:
+2023-01-07 23:56:53	error	middleware/logging.go:55	invalid character '{' after top-level value
+github.com/fox-wei/go_project_training/account_management/middleware.Logging.func1
+	D:/compterstudy/programing_language/go_language/fomalgo/go_project_training/account_management/middleware/logging.go:55
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/fox-wei/go_project_training/account_management/middleware.ProcessTraceID.func1
+	D:/compterstudy/programing_language/go_language/fomalgo/go_project_training/account_management/middleware/traceid.go:20
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/recovery.go:101
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:616
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:572
+net/http.serverHandler.ServeHTTP
+	C:/Program Files (x86)/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files (x86)/Go/src/net/http/server.go:1966
+2023-01-07 23:56:53	info	middleware/logging.go:61	1.8922ms      | ::1          | GET /account/list {code: 30001, message: invalid character '{' after top-level value}
+2023-01-07 23:57:16	info	middleware/auth.go:18	Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzMxMDA1ODcsImlkIjoiMyIsIm5iZiI6MTY3MzEwMDU4NywidXNlcm5hbWUiOiJ2YW4td2VpIn0.EJo4kJ6trnYtHUXP42Z8uPuGUdAYfhferfNvwbX3Cpk
+2023-01-07 23:57:16	info	handler/account.go:156	offset:0 limt:0
+2023-01-07 23:57:16	info	middleware/logging.go:61	9.1967ms      | ::1          | GET /account/list {code: 0, message: }
+2023-01-07 23:58:07	info	model/mysql.go:51	连接数据成功
+2023-01-07 23:58:21	info	middleware/logging.go:61	5.1165ms      | ::1          | GET /account/van-wei {code: 0, message: OK}
+2023-01-07 23:58:31	info	middleware/auth.go:18	Authorization:
+2023-01-07 23:58:31	error	middleware/logging.go:55	invalid character '{' after top-level value
+github.com/fox-wei/go_project_training/account_management/middleware.Logging.func1
+	D:/compterstudy/programing_language/go_language/fomalgo/go_project_training/account_management/middleware/logging.go:55
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/fox-wei/go_project_training/account_management/middleware.ProcessTraceID.func1
+	D:/compterstudy/programing_language/go_language/fomalgo/go_project_training/account_management/middleware/traceid.go:20
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/recovery.go:101
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:616
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/L/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:572
+net/http.serverHandler.ServeHTTP
+	C:/Program Files (x86)/Go/src/net/http/server.go:2916
+net/http.(*conn).serve
+	C:/Program Files (x86)/Go/src/net/http/server.go:1966
+2023-01-07 23:58:31	info	middleware/logging.go:61	1.404ms       | ::1          | GET /account/list {code: 30001, message: invalid character '{' after top-level value}
