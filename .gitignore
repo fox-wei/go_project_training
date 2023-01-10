@@ -17,3 +17,5 @@ test/
 testdata/
 life_revive/trydata/
 life_revive/logs
+/get_root
+/jwt_verify
