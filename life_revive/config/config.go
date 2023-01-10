@@ -2,6 +2,8 @@ package config
 
 import (
 	"log"
+	"path"
+	"runtime"
 
 	mylog "github.com/fox-wei/go_project_training/life_revive/MyLog"
 	"github.com/fsnotify/fsnotify"
@@ -31,7 +33,14 @@ func (c *Config) initConit() error {
 		viper.SetConfigFile(c.Name) //*指定了配置文件
 	} else {
 		// log.Printf("else-%s", c.Name)
-		viper.AddConfigPath("./conf") //*默认解析conf/config.yaml
+		//?./不是表示当前代码文件所在目录；而是代表执行程序可执行文件的目录
+		// viper.AddConfigPath("./conf") //*默认解析conf/config.yaml
+		// viper.SetConfigName("config")
+
+		_, fileName, _, _ := runtime.Caller(0)
+		root := path.Dir(path.Dir(fileName))
+		mylog.Log.Info("root:" + root)
+		viper.AddConfigPath(root + "/conf")
 		viper.SetConfigName("config")
 	}
 
