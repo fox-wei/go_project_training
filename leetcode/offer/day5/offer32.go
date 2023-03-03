@@ -133,7 +133,7 @@ func BFSOrderR(root *TreeNode) [][]int {
 			if (len(res)+1)%2 == 0 { //*偶数层
 				tmp[i-1] = node.Val
 			} else {
-				tmp = append(tmp, node.Val)
+				tmp = append(tmp[1:], node.Val)
 			}
 			queue = queue[1:]
 
