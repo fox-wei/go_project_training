@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>过去与未来</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #333;
+            /*background-color: #f2f2f2;*/
+
+			background-image: url('../static/tree.jpg');
+    		background-size: cover;
+			background-repeat: no-repeat;
+    		background-position: center center;
+			height: 100vh;
+        }
+
+		
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        .value {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #0069d9;
+        }
+
+        .sakura {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background-color: pink;
+			border-radius: 50%;
+			animation: falling 5s linear infinite;
+			box-shadow: 0 0 5px #FFF;
+		}
+		@keyframes falling {
+			0% {
+				transform: translate(0, -100%);
+			}
+			100% {
+				transform: translate(100vw, 100vh);
+			}
+		}
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="sakura"></div>
+        <div class="label">当前时间</div>
+        <div class="value" id="current"></div>
+        <div class="label">今年已经过去</div>
+        <div class="value" id="daysPassed"></div>
+        <div class="label">距离新的一年还有</div>
+        <div class="value" id="daysLeft"></div>
+        <button class="button" id="refreshButton">刷新</button>
+    </div>
+    <script>
+        const daysPassedElement = document.querySelector('#daysPassed');
+        const daysLeftElement = document.querySelector('#daysLeft');
+        const currentElement = document.querySelector('#current');
+        const refreshButton = document.querySelector('#refreshButton');
+
+        //获取计算好的天数，并更新页面
+        function refreshDays() {
+            fetch('http://localhost:8080/days')
+                .then(response => response.json())
+                .then(data => {
+                    currentElement.textContent = data.current;
+                    daysPassedElement.textContent = data.daysPassed + "天";
+                    daysLeftElement.textContent = data.daysLeft + "天";
+                })
+                .catch(error => console.log(error));
+        }
+
+        // 初始时加载一次，并注册按钮点击事件
+        refreshDays();
+        refreshButton.addEventListener('click', refreshDays);
+    </script>
+</body>
+</html>
